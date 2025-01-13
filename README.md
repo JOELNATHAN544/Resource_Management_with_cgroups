@@ -23,5 +23,5 @@ docker run -it --cpu-quota=25000 litmuschaos/stress-ng
 ```
 Set Memory Limits to limit a container to 512MB of memory:
 ```sh
-sudo docker run -it --memory="512m" ubuntu:latest
+docker run -it --memory="512m" litmuschaos/stress-ng
 ```
