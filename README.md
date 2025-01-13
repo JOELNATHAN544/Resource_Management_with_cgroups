@@ -25,3 +25,18 @@ Set Memory Limits to limit a container to 512MB of memory:
 ```sh
 docker run -it --memory="512m" litmuschaos/stress-ng
 ```
+Now go to your terminal and create another tab on the left top side of the terminal.
+Thia tabs will bw to run the script and the test to evaaluate the resource consumption.
+
+On the first tab, source the script.sh file to run the resource intensive script.
+```sh
+source script.sh
+```
+Withhout wastage of time, on the second tab, source the test.sh file to monitor resource consumption.
+```sh
+source test.sh
+```
+The performance is logged into a file.log file and we can use the cat command to cat the contents of the log file.
+```sh
+cat file.logg
+```
