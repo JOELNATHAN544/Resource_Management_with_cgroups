@@ -32,7 +32,7 @@ On the first tab, source the script.sh file to run the resource intensive script
 ```sh
 source script.sh
 ```
-Withhout wastage of time, on the second tab, source the test.sh file to monitor resource consumption.
+Without wastage of time, on the second tab, source the test.sh file to monitor resource consumption.
 ```sh
 source test.sh
 ```
