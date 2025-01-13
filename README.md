@@ -13,3 +13,15 @@ This command runs the stress-ng tool inside the container, specifying heavy CPU 
 --vm-bytes 1G: Allocates 1GB of memory per virtual memory worker.
 --vm-method alloc: Uses the allocation method to stress memory.
 --timeout 60s: Sets the duration of the stress test to 60 seconds.
+To configure cgroups to limit CPU usage to 25% for the container, create a new cgroup and specify CPU limit
+```sh
+sudo cgcreate -g cpu:/litmuschaos/stress-n
+```
+Set CPU limits to 25% of total CPU shares
+```sh
+docker run -it --cpu-quota=25000 litmuschaos/stress-ng
+```
+Set Memory Limits to limit a container to 512MB of memory:
+```sh
+sudo docker run -it --memory="512m" ubuntu:latest
+```
