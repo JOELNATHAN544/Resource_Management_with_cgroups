@@ -1,8 +1,11 @@
 # This a script that performs resource management with cgroups
 
 ### Members of the group
-. JOELNATHAN544
-. nafisatou
+- JOELNATHAN544
+- nafisatou
+First we haveto clone this repository
+```sh
+```
 Launch multipass and run an it 
 ```sh
 sudo snap install multipass
