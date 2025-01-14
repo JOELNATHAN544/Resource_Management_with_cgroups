@@ -69,5 +69,5 @@ chmod +x test.sh
 ```
 The performance is logged into a file.log file and we can use the cat command to cat the contents of the log file.
 ```sh
-cat file.logg
+cat file.log
 ```
