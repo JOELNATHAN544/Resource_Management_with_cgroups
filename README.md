@@ -5,7 +5,7 @@
 - nafisatou
 First we haveto clone this repository
 ```sh
-https://github.com/JOELNATHAN544/Resource_Management_with_cgroups.git
+git clone https://github.com/JOELNATHAN544/Resource_Management_with_cgroups.git
 ```
 Launch multipass and run an it 
 ```sh
