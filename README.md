@@ -1,8 +1,23 @@
-First, pull the stress-ng image:
+# This a script that performs resource management with cgroups
+
+### Members of the group
+. JOELNATHAN544
+. nafisatou
+Launch multipass and run an it 
+```sh
+sudo snap install docker
+```
+```sh
+multipass launch docker --name docker-vm
+```
+```sh
+multipass list docker-vm
+```
+Pull the stress-ng image:
 ```sh
 docker pull litmuschaos/stress-ng
   ```
-We create  a container that simulates heavy heavy CPU and memory usage 
+We create a container that simulates heavy heavy CPU and memory usage 
 ```sh
 docker run -it --name stress-ng-container litmuschaos/stress-ng stress-ng --cpu 4 --vm 2 --vm-bytes 1G --vm-method alloc --timeout 60s
 ```
