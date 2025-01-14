@@ -7,15 +7,14 @@ First we haveto clone this repository
 ```sh
 git clone https://github.com/JOELNATHAN544/Resource_Management_with_cgroups.git
 ```
-Launch multipass and run an it 
+Update and download multipass   
 ```sh
+sudo apt update
 sudo snap install multipass
 ```
+Laumch into the docker-vm
 ```sh
 multipass launch docker-vm
-```
-```sh
-multipass list docker-vm
 ```
 Install and enable docker 
 ```sh
