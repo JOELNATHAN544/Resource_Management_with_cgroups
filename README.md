@@ -12,7 +12,7 @@ Launch multipass and run an it
 sudo snap install multipass
 ```
 ```sh
-multipass launch docker --name docker-vm
+multipass launch docker-vm
 ```
 ```sh
 multipass list docker-vm
