@@ -5,13 +5,23 @@
 . nafisatou
 Launch multipass and run an it 
 ```sh
-sudo snap install docker
+sudo snap install multipass
 ```
 ```sh
 multipass launch docker --name docker-vm
 ```
 ```sh
 multipass list docker-vm
+```
+Install and enable docker 
+```sh
+sudo apt install docker.io
+```
+```sh
+sudo systemctl start docker
+```
+```sh
+sudo systemctl enable docker
 ```
 Pull the stress-ng image:
 ```sh
