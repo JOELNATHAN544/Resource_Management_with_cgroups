@@ -5,6 +5,7 @@
 - nafisatou
 First we haveto clone this repository
 ```sh
+https://github.com/JOELNATHAN544/Resource_Management_with_cgroups.git
 ```
 Launch multipass and run an it 
 ```sh
@@ -56,13 +57,15 @@ docker run -it --memory="512m" litmuschaos/stress-ng
 Now go to your terminal and create another tab on the left top side of the terminal.
 Thia tabs will bw to run the script and the test to evaaluate the resource consumption.
 
-On the first tab, source the script.sh file to run the resource intensive script.
+On the first tab, execute the script.sh file to run the resource intensive script making sure you have execute permissions.
 ```sh
-source script.sh
+chmod +x script.sh
+./script.sh
 ```
-Without wastage of time, on the second tab, source the test.sh file to monitor resource consumption.
+Without wastage of time, on the second tab, execute the test.sh file to monitor resource consumption making sure you have execute permissions.
 ```sh
-source test.sh
+chmod +x test.sh
+./test.sh
 ```
 The performance is logged into a file.log file and we can use the cat command to cat the contents of the log file.
 ```sh
